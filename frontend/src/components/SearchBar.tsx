@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TextInput, StyleSheet, View } from "react-native";
-import { theme } from "../constants";
+import { borderRadius, spacing } from "../constants";
 
 export default function SearchBar() {
     const [text, onChangeText] = useState("");
@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
         width: '85%',
     },
     input: {
-        padding: theme.spacing.md,
+        padding: spacing.md,
         width: 'auto',
         flex: 1,
-        borderRadius: theme.borderRadius.full,
-        backgroundColor: theme.colors.white,
+        borderRadius: borderRadius.full,
+        backgroundColor: '#ffffff',
     }
 })

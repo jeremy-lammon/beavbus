@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { View, StyleSheet, Text, Alert,Switch } from "react-native";
-import Toggle from "../components/Toggle";
 
 
 

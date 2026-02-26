@@ -3,6 +3,8 @@ import { View, StyleSheet, Text, Platform } from "react-native";
 import MapView, { PROVIDER_GOOGLE, AnimatedRegion, MarkerAnimated } from "react-native-maps";
 import { useLocation } from "@/src/hooks";
 import AlertsButton from "../components/AlertsButton";
+import ThemedView from "../components/ThemedView";
+import ThemedText from "../components/ThemedText";
 
 export default function HomeScreen() {
   const { location, loading, error } = useLocation();
