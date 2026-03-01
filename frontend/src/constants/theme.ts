@@ -16,6 +16,9 @@ export const lightTheme = {
     primary: '#cf7500ff',
     success: "#1eff00ff",
     border: '#E0E0E0',
+    switchTrackFalse: '#767577',
+    switchThumb: '#f4f3f4',
+
   }
 }
 
@@ -29,6 +32,8 @@ export const darkTheme = {
     primary: '#cf7500ff',
     success: "#1eff00ff",
     border: '#333333',
+    switchTrackFalse: '#767577',
+    switchThumb: '#f4f3f4',
   }
 }
 

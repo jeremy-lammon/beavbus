@@ -17,6 +17,6 @@ export default function ThemedText({variant = 'body', color, style, children, ..
 
 const styles = StyleSheet.create({
     body: {fontSize: typography.sizes.md, fontWeight: typography.weights.regular},
-    title: {fontSize: typography.sizes.lg, fontWeight: typography.weights.semibold},
+    title: {fontSize: typography.sizes.xl, fontWeight: typography.weights.bold},
     label: {fontSize: typography.sizes.sm, fontWeight: typography.weights.regular},
 })

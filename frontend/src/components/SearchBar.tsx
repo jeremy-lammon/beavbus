@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { TextInput, StyleSheet, View } from "react-native";
 import { borderRadius, spacing } from "../constants";
+import { useTheme } from "@react-navigation/native";
 
 export default function SearchBar() {
     const [text, onChangeText] = useState("");
+    const { colors } = useTheme();
 
     return (
         <View style={styles.container}>
             <TextInput
-                style={styles.input}
+                style={[styles.input, {color: colors.text, backgroundColor: colors.background}]}
                 onChangeText={onChangeText}
                 value={text}
                 placeholder={"Search for a location..."}
@@ -27,6 +29,5 @@ const styles = StyleSheet.create({
         width: 'auto',
         flex: 1,
         borderRadius: borderRadius.full,
-        backgroundColor: '#ffffff',
     }
 })
